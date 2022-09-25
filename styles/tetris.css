@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    
 }
 
 .grid{
@@ -31,4 +32,530 @@
 
 .tetromino{
     background-color: blue;
+}
+
+/* Basics */
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Serif Display', serif;
+  color: linen;
+  background-color: #808080;
+  font-size: 2rem;
+  z-index: -1;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: auto;
+  background-color:#000000;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  z-index: 4;
+  position: fixed;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar a {
+  float: left;
+  display: in-line;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.navbar a:hover {
+  background-color: #808080;
+  color: black;
+}
+
+#logo {
+    padding-top: 5px;
+    padding-left: 8%;
+    z-index: 5;
+    overflow: auto;
+    position: fixed;
+    display: flex;
+     }
+
+    header{
+  overflow: hidden;
+  background-color:#000000;
+  padding: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  height: 50px;
+  text-transform: uppercase;
+  z-index: 4;
+  position: sticky;
+  }
+
+  /* Style the content */
+.content {
+  display: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  
+}
+
+.content .container{
+    display: fixed;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    
+  }
+
+/* About page */ 
+
+#logo-about{
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 50px 50px #000000;
+  background-color: black;
+  z-index: 1;
+}
+
+  .welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.blur-gif{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-image: url('https://giffiles.alphacoders.com/211/211931.gif');
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 150%;
+}
+
+
+
+/* music page */
+
+.music-header{
+  padding-top: 40px;
+}
+#music{
+  padding-top: 65px;
+  margin-top: -65px;
+  z-index: 1;
+  
+}
+.music-releases{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  z-index: 1;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+
+.music-releases iframe{
+  padding: 20px;
+  width: 30%;
+  height: 100%;
+}
+
+
+.music-icons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  z-index: 1;
+}
+.music-icons a{
+  padding: 15px;
+}
+#logo-music{
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px 10px #000000;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.blur-gif2{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-image: url('https://i.giphy.com/media/l0ExlfFjuR4NMnEfm/giphy.webp');
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 150%;
+}
+
+/* Certificate page */
+
+.certificate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate a img{
+  width: 200px;
+  margin: 40px;
+}
+
+.certificate a{
+  text-decoration: none;
+  color: white;
+}
+
+.certificate p:hover {
+  background-color: #808080;
+  color: black;
+}
+
+.linkedin{
+  margin: 20px;
+}
+
+.linkedin img:hover {
+  
+
+  max-width: 320px;
+  
+  
+  border-bottom: 0.2rem solid white;
+  
+}
+
+#certificates{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: black;
+  padding-top: 65px;
+  
+}
+
+/* project section */
+#projects{
+  
+  z-index: 1;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.projects-section-header {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid linen;
+  padding-bottom: 5px;
+}
+
+#projects1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #808080;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.projects-grid a{
+  float: center;
+  display: in-line;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.project-image {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-image2 {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  background-color:linen ;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  background-color: rgba(100, 12, 99, 0.5);
+  z-index: 3;
+}
+.project-title:hover{
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  background-color: rgba(100, 85, 00, 0.5);
+  z-index: 3;
+}
+
+.project1 {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: linen;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+/* contact page */
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  background-color: black;
+}
+
+.contact-icons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5rem;
+  margin: 0 auto 6rem auto;
+}
+
+.contact-icons i{
+text-decoration: none;
+  color: linen;
+}
+
+.contact-icons i:hover{
+  color: #808080;
+  transition: color 0.3s ease-out;
+}
+
+.contact-contact{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto 6rem auto;
+}
+
+.fab, .fa-brands, .fa-solid{
+  padding: 20px;
+  font-size: 5rem;
+}
+
+
+.contact-header {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid linen;
+  padding-bottom: 5px;
+  padding-top: 40px;
+}
+
+.contact-header1 {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto ;
+  border-bottom: 0.2rem solid linen;
+  padding-bottom: 5px;
+}
+
+
+
+/* Style the footer */
+.footer {
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  padding: 10px 0;
+  color: linen;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+h1{
+  font-weight: normal;
+  font-size: 3rem;
+  z-index: 2;
+}
+h2{
+  font-weight: normal;
+  z-index: 2;
+}
+h3{
+  margin-top: 10px;
+}
+
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 55%;
+  }
+  .logo {
+    padding-top: 6px;
+    padding-left: 0;
+    z-index: 5;
+  }
+  
+
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .navbar li {
+    padding-bottom: 15px;
+  }
+  .navbar > ul {
+    flex-direction: column;
+  }
+
+  .navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  width: 100%;
+  text-decoration: none;
+}
+.music-releases{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  z-index: 1;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.music-releases iframe{
+width: 100%;
+height: 80%;
+}
+
+}
+
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 50%;
+  }
 }

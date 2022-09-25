@@ -113,16 +113,29 @@ function control(e){
 //The keyup event is fired when a key is released.
 document.addEventListener('keyup',control)
 
-//moveDown function
+/* function without one second slide
+moveDown function
 
 function moveDown(){
   undraw()
   currentPosition += width
   draw()
   freeze()
-};
+};*/
 
-// freeze function
+ //move down function with checking to slide
+ function moveDown() {
+    
+  if(!current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
+    undraw()
+    currentPosition += width
+    draw()
+  } else {
+    freeze();  
+  }
+}
+
+/* freeze function
 
 function freeze(){
   if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
@@ -137,6 +150,21 @@ function freeze(){
       addScore()
       gameOver()
   }
+}
+*/
+
+  //freeze function with slide
+  function freeze() {
+    current.forEach(index => squares[currentPosition + index].classList.add('taken'))
+    //start a new tetromino falling
+    random = nextRandom
+    nextRandom = Math.floor(Math.random() * theTetrominoes.length)
+    current = theTetrominoes[random][currentRotation]
+    currentPosition = 4
+    draw()
+    displayShape()
+    addScore()
+    gameOver()
 }
 
 //moving tetromino to the left until it reaches modulo 0

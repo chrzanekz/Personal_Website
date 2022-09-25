@@ -6,9 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="tetris/tetris_java.js" charset="utf8"></script>
         <link rel="stylesheet" type="text/css" href="./styles/tetris.css"><link/>
-    </head>
+         <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/21e747702a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        </head>
     <body>
 
+        <header>
+            <div id="logo">
+              <img src="https://i.imgur.com/o4tHixS.png"
+                   alt="HLWN'V" height="45px"
+              />
+            </div>
+            <div class="navbar" id="navbar">  
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+              </div>
+          </header>
+          <section class="content">
         <h3>Score:<span id="score">0</span></h3>
         <button id="start-button">Start/Pause</button>
         <div class="container">
@@ -244,5 +264,10 @@
                 <div></div>
             </div>
         </div>
+    </section>
+        <section class="footer" id="footer">
+  
+            <p>©Copyright 2022 - HLWN'V Mateusz Chrzan</p>
+          </section>
     </body>
 </html>

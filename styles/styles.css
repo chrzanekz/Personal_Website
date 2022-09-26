@@ -88,7 +88,7 @@ body {
 /* About page */ 
 
 #logo-about{
-  padding: 10px;
+  padding-top: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 50px 50px #000000;
   background-color: black;
@@ -189,7 +189,7 @@ body {
   left: 0;
   right: 0;
   display: flex;
-  height: 150%;
+  height: 220%;
 }
 
 /* Certificate page */
@@ -340,6 +340,7 @@ body {
   text-align: center;
   z-index: 1;
   background-color: black;
+  padding-top: 60px;
 }
 
 .contact-icons{
@@ -409,17 +410,10 @@ text-decoration: none;
   z-index: 1;
   padding: 10px 0;
   color: linen;
-  position: sticky;
+  
   bottom: 0;
   width: 100%;
 }
-
-
-
-
-
-
-
 
 h1{
   font-weight: normal;
@@ -492,11 +486,7 @@ h3{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 45%;
   z-index: 1;
-  margin-bottom: 150px;
-  margin-top: 100px;
 }
 
 .music-releases iframe{
@@ -504,6 +494,27 @@ width: 100%;
 height: 80%;
 }
 
+.music-icons a img{
+  width: 250px;
+  height:auto;
+}
+
+#music{
+  padding-top: 220px;
+}
+
+#certificates{
+  padding-top: 220px;
+  padding-bottom: -220px;
+}
+
+#projects{
+  padding-top: 220px;
+  padding-bottom: -220px;
+}
+
+#contact{
+  padding-top: 220px;
 }
 
 

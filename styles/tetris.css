@@ -3,6 +3,14 @@
     
 }
 
+body {
+  font-family: 'Noto Serif Display', serif;
+  color: linen;
+  background-color: #808080;
+  font-size: 2rem;
+  z-index: -1;
+}
+
 .grid{
     height: 400px;
     width: 200px;

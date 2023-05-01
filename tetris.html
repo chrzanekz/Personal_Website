@@ -10,6 +10,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/21e747702a.js" crossorigin="anonymous"></script>
+    <script>
+        function updateYear() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").innerHTML = currentYear;
+        }
+            setInterval(updateYear, 1000);
+    </script>        
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         </head>
     <body>
@@ -21,11 +28,12 @@
               />
             </div>
             <div class="navbar" id="navbar">  
-            <a href="#about">About</a>
-            <a href="#music">Music</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#music">Music</a>
+            <a href="index.html#certificates">Certificates</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="tetris.html">Tetris Game</a>
+            <a href="index.html#contact">Contact</a>
               </div>
           </header>
           <section class="content">
@@ -275,7 +283,15 @@
     </section>
         <section class="footer" id="footer">
   
-            <p>©Copyright 2022 - HLWN'V Mateusz Chrzan</p>
+            <p>©Copyright 
+                <span id="current-year">
+                    <script>
+                    var currentYear = new Date().getFullYear();
+                    document.getElementById("current-year").innerHTML = currentYear;
+                        </script>
+                </span> 
+                HLWN'V Mateusz Chrzan
+            </p>
           </section>
     </body>
 </html>
